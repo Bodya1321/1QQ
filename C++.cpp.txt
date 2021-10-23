@@ -19,5 +19,5 @@ int main()
         x += h;
     }while (x <= maxX + h / 2);
     
-
+return 0
 }
