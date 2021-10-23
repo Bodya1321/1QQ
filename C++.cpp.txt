@@ -1,0 +1,23 @@
+#include <iomanip>
+#include<math.h>
+#include<windows.h>
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+    float minX, maxX, h, x;
+    double y;
+    cin >> minX >> maxX >> h;
+    x = minX;
+    while (x <= maxX + h / 2)
+    do
+    {
+        y = (pow(x, 5) + 3 * tan(pow(x, 2) + 2));
+        cout << setw(10) << left << x << setw(4) << y << endl;
+        x += h;
+    }while (x <= maxX + h / 2);
+    
+
+}
